@@ -1,0 +1,211 @@
+:root {
+   
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --botao-azul: #167BF7;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter';
+
+}
+
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+section {
+    margin-bottom: 300px;
+}
+
+
+/*container principal*/
+
+.principal {
+    background-image: url("Background.png");
+    background-size: contain;
+    background-repeat: no-repeat;  
+}
+
+.container {
+    height: 100vh;  /*cada elemento vai ocupar 100% da tela no seu espaço*/
+    display: grid;
+    grid-template-columns: 50% 50%;
+    padding: 1em;
+}
+
+
+/* container sessao 1 */
+
+.container__caixa {
+    text-align:center;
+    align-items: center;
+    margin: 0 6em;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem1 {
+    margin: 1em 0 2em 0;  /* top right bottom left */
+}
+
+.container__botao {
+    background-color:var(--botao-azul);
+    border-radius: 5px; /* arredondamento da borda*/
+    padding: 1em; /* espaçamento interno do botao */
+    color: var(--branco-principal);
+    display: block; /* ocupa o espaço inteiro dele*/
+    text-decoration: none; /*tira o sublinado do link do botão*/
+    margin-bottom: 1em;  /*espaço só na parte de baixo*/
+}
+
+.botao__secundario { /* pegou algumas propriedades do container__botao porem mudou-se algumas*/
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}   
+
+.container__aviso {
+    color: var(--cinza-secundario);
+    font-size: 12px;
+}
+
+
+/* container sessao 2 */
+
+.container__imagem2 {
+    width: 80%;
+}
+
+.secundario {
+    text-align: left;
+    align-items: center;
+    margin: 0 3em;
+}
+
+.descricao__titulo2 {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0;
+}
+
+.descricao__paragrafo {
+    font-size: 15px;
+    color: var(--cinza-secundario);
+}
+
+
+/* container sessao 3 */
+
+.terciario {
+    margin: 0 6em;
+}
+
+.paragrafo2 {
+    font-size: 16px;
+}
+
+.container__imagem3 {
+    margin: 0 6em; 
+}
+
+.botao__terciario {
+    height: 27px;
+    width: 150px;
+    text-align: center;  
+}
+
+.container__descricao3 {
+    align-items: center;
+    margin-top: 15%;
+}
+
+
+
+/* container sessao 4 */
+
+.titulo4 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 1px;
+}
+
+.paragrafo3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--cinza-secundario);
+}
+
+.descricao4 {
+    align-items: center;
+    margin: 2px 6px 2px 6px;
+    margin-top: 5%;
+}
+
+.quaternario {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 33% 33% 33%;
+    padding: 1em;
+}
+
+.container__imagem4 {
+    height: 324px;
+    width: 547px;
+}
+
+
+/* container sessao quinto */
+
+.quinto {
+    align-items: center;
+    text-align: center;
+    display:grid;
+}
+
+.titulo5 {
+    font-size: 48px;
+}
+
+.dispositivos {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+
+.texto__quinto {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+
+/*footer */
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-secundario);
+    font-size: 14px;
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
